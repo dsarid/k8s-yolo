@@ -20,7 +20,7 @@ pipeline {
         // TIMESTAMP = new Date().format("yyyyMMdd-HHmmss")
 
         IMAGE_TAG = "dev_v0.2.$BUILD_NUMBER"
-        IMAGE_BASE_NAME = "int-int-yolo"
+        IMAGE_BASE_NAME = "int-yolo"
 
         DOCKER_CREDS = credentials('dockerhub')
         DOCKER_USERNAME = "${DOCKER_CREDS_USR}"  // The _USR suffix added to access the username value
