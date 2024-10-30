@@ -57,7 +57,7 @@ pipeline {
         }
         stage('Trigger Deploy') {
             steps {
-                build job: 'yolo_deploy_prod', wait: false, parameters: [
+                build job: 'deploy_prod', wait: false, parameters: [
                 string(name: 'SERVICE_NAME', value: "yolo5"),
                 string(name: 'IMAGE_FULL_NAME_PARAM', value: "$IMAGE_FULL_NAME_PARAM")
                 ]
