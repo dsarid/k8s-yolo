@@ -124,6 +124,7 @@ def consume():
             else:
                 print("The file does not exist")
             sqs_client.delete_message(QueueUrl=QUEUE_NAME, ReceiptHandle=receipt_handle)
+            #test
 
 
 if __name__ == "__main__":
